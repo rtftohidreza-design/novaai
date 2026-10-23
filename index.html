@@ -1,0 +1,290 @@
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-icon">✦</div>
+      <div>
+        <strong>NovaAI</strong>
+        <span>Creator Hub</span>
+      </div>
+    </div>
+
+    <nav>
+      <a class="active" href="#home">⌂ <span>Home</span></a>
+      <a href="#tools">⚡ <span>AI Tools</span></a>
+      <a href="#templates">▦ <span>Templates</span></a>
+      <a href="#projects">◈ <span>My Projects</span></a>
+      <a href="#favorites">♡ <span>Favorites</span></a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="pro-card">
+        <div class="pro-star">✦</div>
+        <h3>Upgrade to Pro</h3>
+        <p>Unlock powerful AI tools and more credits.</p>
+        <button>Upgrade Now</button>
+      </div>
+
+      <a href="#">⚙ <span>Settings</span></a>
+      <a href="#">? <span>Help Center</span></a>
+    </div>
+  </aside>
+
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="mobile-brand">✦ NovaAI</div>
+
+      <div class="search">
+        <span>⌕</span>
+        <input id="searchInput" type="text"
+          placeholder="Search AI tools...">
+        <kbd>Ctrl K</kbd>
+      </div>
+
+      <div class="top-actions">
+        <button class="icon-btn">◐</button>
+        <button class="credits">✦ 120 Credits</button>
+        <div class="avatar">TR</div>
+      </div>
+    </header>
+
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="badge">✦ AI CREATIVE STUDIO</div>
+
+        <h1>
+          Create anything with
+          <span>AI.</span>
+        </h1>
+
+        <p>
+          Generate images, write content, create designs,
+          videos and more — all in one beautiful workspace.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="primary-btn" onclick="openTool('AI Image Generator')">
+            ✦ Start Creating
+          </button>
+          <button class="secondary-btn" onclick="scrollToTools()">
+            Explore Tools →
+          </button>
+        </div>
+
+        <div class="stats">
+          <div>
+            <strong>30+</strong>
+            <span>AI Tools</span>
+          </div>
+          <div>
+            <strong>10K+</strong>
+            <span>Creators</span>
+          </div>
+          <div>
+            <strong>50K+</strong>
+            <span>Creations</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+
+        <div class="floating-card card-a">
+          <span>✦</span>
+          <b>AI Image</b>
+          <small>Generating...</small>
+          <div class="mini-loader"></div>
+        </div>
+
+        <div class="floating-card card-b">
+          <span>✎</span>
+          <b>AI Writer</b>
+          <small>Ready to create</small>
+        </div>
+
+        <div class="ai-window">
+          <div class="window-top">
+            <i></i><i></i><i></i>
+          </div>
+
+          <div class="window-image">
+            <div class="generated-symbol">✦</div>
+          </div>
+
+          <div class="window-info">
+            <div>
+              <b>Creative AI</b>
+              <small>Your idea, transformed.</small>
+            </div>
+            <button>↗</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Tools -->
+    <section class="tools-section" id="tools">
+
+      <div class="section-heading">
+        <div>
+          <div class="mini-label">EXPLORE</div>
+          <h2>Powerful AI Tools</h2>
+          <p>Everything you need to create faster.</p>
+        </div>
+
+        <div class="category-filter">
+          <button class="filter active" data-category="all">All</button>
+          <button class="filter" data-category="image">Image</button>
+          <button class="filter" data-category="writing">Writing</button>
+          <button class="filter" data-category="business">Business</button>
+          <button class="filter" data-category="video">Video</button>
+        </div>
+      </div>
+
+      <div class="tools-grid" id="toolsGrid"></div>
+
+    </section>
+
+
+    <!-- Templates -->
+    <section class="templates" id="templates">
+      <div class="section-heading">
+        <div>
+          <div class="mini-label">READY MADE</div>
+          <h2>Popular Templates</h2>
+          <p>Start with a beautiful design.</p>
+        </div>
+        <button class="view-btn">View All →</button>
+      </div>
+
+      <div class="template-grid">
+
+        <div class="template-card">
+          <div class="template-preview purple">
+            <small>YOUR BRAND</small>
+            <strong>NEW<br>PRODUCT</strong>
+            <span>LAUNCH 2026</span>
+          </div>
+          <div class="template-info">
+            <b>Product Advertisement</b>
+            <button onclick="openTool('Product Advertisement')">Use →</button>
+          </div>
+        </div>
+
+        <div class="template-card">
+          <div class="template-preview blue">
+            <small>CREATIVE STUDIO</small>
+            <strong>MODERN<br>DESIGN</strong>
+            <span>CREATE MORE</span>
+          </div>
+          <div class="template-info">
+            <b>Creative Poster</b>
+            <button onclick="openTool('AI Poster Maker')">Use →</button>
+          </div>
+        </div>
+
+        <div class="template-card">
+          <div class="template-preview pink">
+            <small>YOUR STORY</small>
+            <strong>HELLO<br>2026</strong>
+            <span>NEW BEGINNING</span>
+          </div>
+          <div class="template-info">
+            <b>Social Media Post</b>
+            <button onclick="openTool('Instagram Post')">Use →</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <strong>✦ NovaAI</strong>
+        <p>One workspace. Endless creativity.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <span>© 2026 NovaAI</span>
+    </footer>
+
+  </main>
+</div>
+
+
+<!-- Tool Modal -->
+<div class="modal" id="toolModal">
+  <div class="modal-box">
+
+    <button class="close-modal" onclick="closeTool()">×</button>
+
+    <div class="modal-icon" id="modalIcon">✦</div>
+    <div class="mini-label">AI CREATOR</div>
+
+    <h2 id="modalTitle">AI Tool</h2>
+    <p id="modalDescription">
+      Turn your ideas into amazing creations.
+    </p>
+
+    <label>Your Prompt</label>
+    <textarea id="prompt"
+      placeholder="Describe what you want to create..."></textarea>
+
+    <div class="upload-box">
+      <span>＋</span>
+      <b>Upload an image</b>
+      <small>PNG, JPG or WEBP</small>
+    </div>
+
+    <div class="settings-row">
+      <div>
+        <label>Style</label>
+        <select>
+          <option>Modern</option>
+          <option>Realistic</option>
+          <option>Cinematic</option>
+          <option>Minimal</option>
+          <option>3D</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Quality</label>
+        <select>
+          <option>Standard</option>
+          <option>High</option>
+          <option>Ultra</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="generate-btn" onclick="generateDemo()">
+      ✦ Generate with AI
+    </button>
+
+    <div class="result" id="result">
+      <div class="result-icon">✦</div>
+      <b>Your creation will appear here</b>
+      <p>Enter a prompt and click Generate.</p>
+    </div>
+
+  </div>
+</div>
